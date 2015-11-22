@@ -11,8 +11,8 @@ colorscheme default
 set background=dark
 
 " Line at 80 chars
-set colorcolumn=80
-hi ColorColumn ctermbg=DarkBlue
+" set colorcolumn=80
+" hi ColorColumn ctermbg=DarkBlue
 
 set expandtab
 set smarttab
