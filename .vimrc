@@ -37,3 +37,13 @@ set number
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 set ts=4 sw=4 et
+
+" needed for airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
+
+" for navigation
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
