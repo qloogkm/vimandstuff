@@ -41,6 +41,7 @@ set ts=4 sw=4 et
 " needed for airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
+:let g:airline_theme='molokai'
 
 " for navigation
 nnoremap <c-j> <c-w>j
