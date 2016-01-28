@@ -28,6 +28,8 @@ git clone https://github.com/edkolev/tmuxline.vim
 git clone https://github.com/scrooloose/syntastic.git
 # vim and tmux unifier
 git clone https://github.com/christoomey/vim-tmux-navigator.git
+# you complete me autocompletion
+git clone https://github.com/Valloric/YouCompleteMe.git
 popd
 
 
