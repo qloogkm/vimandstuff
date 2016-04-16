@@ -30,8 +30,8 @@ nnoremap <silent> <C-Left> :tabprevious<CR>
 nnoremap <silent> <C-t> :tabnew<CR>
 
 " color numbers differently
-highlight LineNr ctermfg=233
-set number
+highlight LineNr ctermfg=238 ctermbg=235
+set relativenumber
 
 " settings for indent guides
 let g:indent_guides_start_level=2
@@ -41,7 +41,7 @@ set ts=4 sw=4 et
 " needed for airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
-:let g:airline_theme='molokai'
+:let g:airline_theme='papercolor'
 
 " for navigation
 nnoremap <c-j> <c-w>j
