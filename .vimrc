@@ -30,7 +30,7 @@ nnoremap <silent> <C-Left> :tabprevious<CR>
 nnoremap <silent> <C-t> :tabnew<CR>
 
 " color numbers differently
-highlight LineNr ctermfg=238 ctermbg=235
+highlight LineNr ctermfg=238 
 set relativenumber
 
 " settings for indent guides
