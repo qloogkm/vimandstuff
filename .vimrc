@@ -32,6 +32,7 @@ nnoremap <silent> <C-t> :tabnew<CR>
 " color numbers differently
 highlight LineNr ctermfg=238 
 set relativenumber
+set number
 
 " settings for indent guides
 let g:indent_guides_start_level=2
