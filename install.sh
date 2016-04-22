@@ -30,6 +30,8 @@ git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/christoomey/vim-tmux-navigator.git
 # you complete me autocompletion
 git clone https://github.com/Valloric/YouCompleteMe.git
+# install ctrl.p for fuzzy searches
+git clone https://github.com/ctrlpvim/ctrlp.vim
 popd
 
 
