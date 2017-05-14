@@ -33,6 +33,8 @@ set mouse=
 " use true colors
 set termguicolors
 colorscheme gruvbox
+" keep bg transparent
+highlight Normal guibg=none
 
 " use deoplete
 "let g:deoplete#enable_at_startup = 1
