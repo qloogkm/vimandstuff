@@ -18,6 +18,7 @@ Plug 'ervandew/supertab'
 Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'airblade/vim-gitgutter'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
