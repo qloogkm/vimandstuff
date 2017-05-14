@@ -12,13 +12,14 @@ Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'ervandew/supertab'
-" Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'ervandew/supertab'
+"Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+"Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
+Plug 'vim-airline/vim-airline'
+Plug 'groenewege/vim-less'
 
 call plug#end()
 
@@ -34,15 +35,15 @@ set termguicolors
 colorscheme gruvbox
 
 " use deoplete
-let g:deoplete#enable_at_startup = 1
-autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:UltiSnipsExpandTrigger="<C-j>"
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-set completeopt=longest,menuone,preview
-let g:deoplete#sources = {}
-let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
-let g:tern#command = ['tern']
-let g:tern#arguments = ['--persistent']
+"let g:deoplete#enable_at_startup = 1
+"autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+"let g:UltiSnipsExpandTrigger="<C-j>"
+"inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+"set completeopt=longest,menuone,preview
+"let g:deoplete#sources = {}
+"let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
+"let g:tern#command = ['tern']
+"let g:tern#arguments = ['--persistent']
 " for emmet
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
@@ -70,13 +71,13 @@ set number
 " needed for airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
-:let g:airline_theme='papercolor'
+:let g:airline_theme='gruvbox'
 
 " for navigation
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w><c-j>
+nnoremap <c-k> <c-w><c-k>
+nnoremap <c-h> <c-w><c-h>
+nnoremap <c-l> <c-w><c-l>
 
 " for ultisnips my man
 let g:UltiSnipsExpandTrigger="<c-j>"
